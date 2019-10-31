@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # python
 - python常见概念
 - 编程规范
@@ -11,3 +12,7 @@
 - linux\docker
 - web框架
 - 网络协议
+=======
+# 目录
+
+>>>>>>> ba61319806ac247d2daf24cdfa7d89337e901dde
