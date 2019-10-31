@@ -38,7 +38,7 @@
   - [ ] 装饰器
   - [ ] 单例
   - [ ] 工厂
-- git
+- git操作
   - [ ] 常用命令
   - [ ] 分支管理	
 - linux\docker
@@ -48,11 +48,18 @@
   - [ ] django
   - [ ] flask
   - [ ] tornado
+- web优化
+  - [ ] 缓存
+  - [ ] 异步
+  - [ ] 并发
+  - [ ] 批量
+  - [ ] 分布式\微服务
+  - [ ] 数据库分库、分表、分片
 - 计算机网络
   - [ ] tcp\ip\udp
   - [ ] http
 - web安全
-  - [ ] sqlzhuru
+  - [ ] sql注入
   - [ ] xsf
   - [ ] csrf
 - 消息队列
@@ -61,3 +68,5 @@
 - 数据分析
   - [ ] numpy
   - [ ] pandas
+- python快捷编码
+  - [ ] write idionm python
