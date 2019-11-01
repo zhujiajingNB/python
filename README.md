@@ -70,3 +70,6 @@
   - [ ] pandas
 - python快捷编码
   - [ ] write idionm python
+- 单元测试
+  - [ ] assert
+  - [ ] pytest
