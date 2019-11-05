@@ -26,4 +26,17 @@ if __name__ == '__main__':
 	process2.join()
 ```
 
-- 
+- 线程通信
+
+  ```
+  # 管道、队列、共享数据
+  from multiprocessing import Queue, Pipe, Managers
+  ```
+
+- 进程池
+
+  ```
+  from  multiprocessing import Process,Pool
+  ```
+
+  
