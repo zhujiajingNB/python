@@ -5,7 +5,7 @@
   - [ ] 继成、多态
   - [ ] 全局解释器锁 (GIL)
   - [ ] 文件，网络socket操作
-  - [ ] 垃圾回收机制
+  - [ ] [垃圾回收机制](https://github.com/zhujiajingNB/python/blob/master/CG.md)
   
 - 编程规范
   - [ ] autopep8
@@ -102,4 +102,4 @@
   - [ ] 调试                   
     
 
-                                                                                                 
+    ​                                                                                             
