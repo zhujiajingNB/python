@@ -28,4 +28,26 @@
   A().test()
   ```
 
+  ### property的使用
+  
+  ```
+  class A():
+  	def _init_(self):
+  		self._name = "###"
+  	
+  	@property
+  	def name(self):
+  		return self._name
+  	
+  	@name.settr
+  	def name(self, value):
+  		self._name = value
+  
+  a = A()
+  a.name == "###" True
+  a.name = "***"
+  a.name == "***" True
+  	
+  ```
+  
   
