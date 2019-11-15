@@ -3,8 +3,8 @@
   - [ ] 数据类型、变量引用
   - [ ] 函数、类
   - [ ] 继成、多态
-  - [ ] 全局解释器锁 (GIL)
-  - [ ] 文件，网络socket操作
+  - [ ] [全局解释器锁 (GIL)](https://github.com/zhujiajingNB/python/blob/master/GIL.md)
+  - [ ] [文件]([https://github.com/zhujiajingNB/python/blob/master/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/io.py](https://github.com/zhujiajingNB/python/blob/master/代码示例/io.py))，[网络socket操作](https://github.com/zhujiajingNB/python/blob/master/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/socket_client.py)
   - [ ] [垃圾回收机制](https://github.com/zhujiajingNB/python/blob/master/CG.md)
   
 - 编程规范
