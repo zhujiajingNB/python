@@ -82,6 +82,8 @@
 - 消息队列
   - [ ] kafka
   - [ ] rabbitmq
+  - [ ] activemq
+  - [ ] rocketmq
   
 - 数据分析
   - [ ] numpy
