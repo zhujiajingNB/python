@@ -8,6 +8,7 @@ python中GIL在单位时间内只运行一个线程进行字节码操作，但�
   class A(threading.Thread):
   	def _init_(self,id):
   		treading.Thread_init(self)
+  		#supder()._init()
   		self.id = id
   	def run(self):
   		#...
