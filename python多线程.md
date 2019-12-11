@@ -73,4 +73,8 @@ python中GIL在单位时间内只运行一个线程进行字节码操作，但�
   
   ```
 
-  
+- join /setDaemon
+
+  join:主线程在子线程完成后才退出
+
+  setDaemon:主线程完成后，子线程也会退出。
