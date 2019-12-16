@@ -30,3 +30,7 @@ executor = ThreadPoolExecutor(4)
 一个创建一个线程执行事件循环
 
 主线程中用asyncion.run_coroutine_threadsafe(函数()，loop)
+
+注意：
+
+​	按顺序执行的协程，仍旧是阻塞的，因为只有一个协程挂起时，并无其他协程可以切换执行。所以要使协程达到异步，需要有多个协程加入事件循环中。
