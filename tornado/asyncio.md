@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 asyncio中有三类可等待对象（awaitble对象）
 
 1. coroutine: 即协程函数
@@ -81,3 +82,41 @@ asyncio中有三类可等待对象（awaitble对象）
    ​			4. syncio.ensure_future(task)
 
    ​			其中1，3，4都是直接添加到当前线程中的事件循环中，2需要将其调用它的协程添加至事件循环		中
+=======
+asyncio.get_event_loop()  若当前线程的事件循环还没有创建（即set_event_loop未调用），则创建一个事件循环为当前线程的，若已经创建则返回当前线程的事件循环。
+
+asyncio.new_event_loop(loop) 设置为当前线程的事件循环
+
+asyncio.set_event_loop() 创建一个新事件循环
+
+
+
+添加协程：
+
+loop.create_task(c)
+
+asyncio.ensure_future(c)
+
+执行阻塞io
+
+```
+loop = asyncio.get_event_loop()
+executor = ThreadPoolExecutor(4)
+task =loop.run_in_executor(executor,函数，参数)
+
+tornado中
+executor = ThreadPoolExecutor(4)
+@run_on_server 修饰一个阻塞函数，为协程
+
+```
+
+多线程协程
+
+一个创建一个线程执行事件循环
+
+主线程中用asyncion.run_coroutine_threadsafe(函数()，loop)
+
+注意：
+
+​	按顺序执行的协程，仍旧是阻塞的，因为只有一个协程挂起时，并无其他协程可以切换执行。所以要使协程达到异步，需要有多个协程加入事件循环中。
+>>>>>>> d82adb439b97da29641a45509ddd000c89697a49
