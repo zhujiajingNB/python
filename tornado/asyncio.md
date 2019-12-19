@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 asyncio中有三类可等待对象（awaitble对象）
 
 1. coroutine: 即协程函数
@@ -79,11 +79,13 @@ asyncio中有三类可等待对象（awaitble对象）
 
    ​			3. asyncio.create_task(task)
 
-   ​			4. syncio.ensure_future(task)
+   ​			4. syncio.ensure_future(task)       
 
-   ​			其中1，3，4都是直接添加到当前线程中的事件循环中，2需要将其调用它的协程添加至事件循环		中
-=======
-asyncio.get_event_loop()  若当前线程的事件循环还没有创建（即set_event_loop未调用），则创建一个事件循环为当前线程的，若已经创建则返回当前线程的事件循环。
+   ```
+其中1，3，4都是直接添加到当前线程中的事件循环中，2需要将其调用它的协程添加至事件循环中
+```
+
+asyncio.get_event_loop()  若当前线程的事件循环还没有创建（即set_event_loop未调用），则创建一个事件       循环为当前线程的，若已经创建则返回当前线程的事件循环。
 
 asyncio.new_event_loop(loop) 设置为当前线程的事件循环
 

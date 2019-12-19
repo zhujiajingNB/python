@@ -31,7 +31,7 @@ asyncio中有三类可等待对象（awaitble对象）
 
    ​		task = asyncio.wait((coro(),coro(),))  返回的是一个可等待对象
 
-   ​		task = asyncio.gather(*args) ,返回的是一个可等待对象
+   ​		task = asyncio.gather(*args) ,返回的是一个可等待对象 (该方法也会直接将协程添加至事件循环中)
 
    ​		调用方式：
 
