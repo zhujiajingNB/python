@@ -77,6 +77,14 @@
 ##### 索引的实现
 
 - B+树
+- 哈希
 
-  
+#### 慢查询
+
+- 配置慢查询日志
+  1. slow_query_log  是否开启慢查询日志
+  2. slow_query_log_file 日志存放路径
+  3. long_query_time 慢查询阈值，超过记录下来
+  4. log-queries-not-using-indexes 该配置记录未使用索引的sql语句
+- explain排查索引使用情况
 
