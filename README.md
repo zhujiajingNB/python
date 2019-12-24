@@ -5,11 +5,26 @@
   - [ ] 数据类型、变量引用
   - [ ] 函数、类
   - [ ] 继成、多态
-  - [ ] [全局解释器锁 (GIL)](https://github.com/zhujiajingNB/python/blob/master/GIL.md)
-  - [ ] [文件](https://github.com/zhujiajingNB/python/blob/master/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/io.py)，[网络socket操作](https://github.com/zhujiajingNB/python/blob/master/%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B/socket_client.py)
-  - [ ] [垃圾回收机制](https://github.com/zhujiajingNB/python/blob/master/CG.md)
+  - [ ] 匿名函数
+  - [ ] 闭包
   
+- python高级特性
+
+  - [ ] 元类
+  - [ ] 上下文管理器
+  - [ ] 弱引用
+  - [ ] 生成器
+  - [ ] 迭代器
+  - [ ] 垃圾回收机制
+  - [ ] 全局解释器锁
+  - [ ] python自省机制
+
+- python魔法方法
+
+  - [ ] 常见魔法方法
+
 - 编程规范
+  
   - [ ] autopep8
   - [ ] pylint
   
@@ -71,14 +86,23 @@
   - [ ] 数据库分库、分表、分片
   
 - 计算机网络
-  - [ ] tcp\ip\udp
+  - [ ] tcp\udp
   - [ ] http
+  - [ ] rpc
+  - [ ] websocket
   
 - web安全
   - [ ] sql注入
   - [ ] xsf
   - [ ] csrf
   
+- pythonweb服务器
+
+  - [ ] tornado
+  - [ ] uwsgi
+  - [ ] gunicon
+  - [ ] apach
+
 - 消息队列
   - [ ] kafka
   - [ ] rabbitmq
