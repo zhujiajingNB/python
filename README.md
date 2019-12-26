@@ -102,7 +102,7 @@
   - [ ] tornado
   - [ ] uwsgi
   - [ ] gunicon
-  - [ ] apach
+  - [ ] mode_usgi
 
 - 消息队列
   - [ ] kafka
