@@ -46,7 +46,7 @@
   - [ ] concurrent.futures
   
 - 异步库
-  - [ ] celery（celery+队列（redis、rabbitmq、kafka））
+  - [ ] celery（celery+队列（redis、rabbitmq））
   - [ ] asynico
   - [ ] tornado
   
@@ -54,6 +54,7 @@
   - [ ] mysql(关系型)
   - [ ] redis（内存）
   - [ ] mongodb（文件）
+  - [ ] elasticsearch(搜索引擎)
   
 - 算法与数据结构
   - [ ] 队列、链表、堆、栈、二叉树
@@ -103,6 +104,7 @@
   - [ ] uwsgi
   - [ ] gunicon
   - [ ] mode_usgi
+  - [ ] daphne
 
 - 消息队列
   - [ ] kafka

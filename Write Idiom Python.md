@@ -112,4 +112,28 @@
   	
   ```
 
+- 使用for...else处理没有break中断的情况
+
+  ```
+  # bad
+  find = False
+  for x in xrange(1,5):
+      if x == 5:
+          find = True
+          print 'find 5'
+          break
+  if not find:
+      print 'can not find 5!'
+  ####can not find 5!
+  
+  # good
+  for x in xrange(1,5):
+      if x == 5:
+          print 'find 5'
+          break
+  else:
+      print 'can not find 5!'
+  ####can not find 5!
+  ```
+
   
