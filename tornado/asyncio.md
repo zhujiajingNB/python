@@ -69,7 +69,7 @@ asyncio中有三类可等待对象（awaitble对象）
 
    ​		task = asyncio.wait([coro(),coro(),])  返回的是一个可等待对象
 
-   ​		task = asyncio.gather(*args) ,返回的是一个可等待对象
+   ​		task = asyncio.gather(*args) ,返回的是一个可等待对象 (*直接将任务添加至协程中)
 
    ​		调用方式：
 
@@ -103,13 +103,18 @@ asyncio.ensure_future(c)
 执行阻塞io
 
 ```
-loop = asyncio.get_event_loop()
-executor = ThreadPoolExecutor(4)
-task =loop.run_in_executor(executor,函数，参数)
+### asyncio
 
-tornado中
+loop = asyncio.get_event_loop()
+	executor = ThreadPoolExecutor(4)
+	task =loop.run_in_executor(executor,函数，参数)  #
+
+#### tornado中
+
 executor = ThreadPoolExecutor(4)
-@run_on_server 修饰一个阻塞函数，为协程
+		@run_on_server 修饰一个阻塞函数，为协程
+
+tornado.ioloop.IOloop.current().run_in_executor(executor,函数，参数) 
 
 ```
 
@@ -122,7 +127,6 @@ executor = ThreadPoolExecutor(4)
 注意：
 
 ​	按顺序执行的协程，仍旧是阻塞的，因为只有一个协程挂起时，并无其他协程可以切换执行。所以要使协程达到异步，需要有多个协程加入事件循环中。
->>>>>>> d82adb439b97da29641a45509ddd000c89697a49
 
 ```
 
