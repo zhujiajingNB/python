@@ -51,7 +51,8 @@
   class A:
   	num = 10
   	def change_num(self):
-  		return self.num = 11
+  		self.num = 11
+  		return self.num
   a = A()
   a.num >>> 10
   a.change_num()
@@ -61,7 +62,8 @@
   class A:
   	num = []
   	def change_num(self):
-  		return self.append(1)
+  		self.num.append(1)
+  		return self.num
   a = A()
   a.num >>> []
   a.change_num() 
