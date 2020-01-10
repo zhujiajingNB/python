@@ -23,3 +23,8 @@ python中数字对象和字符串对象，在全局解释器范围会放入缓�
 super()._init_(参数) #不能带self参数
 ```
 
+##### django中登陆
+
+cookie 设置的过期时间，时间一到浏览器删除cookie
+
+session 设置过期时间，时间一到删除cookie和存储的session值
